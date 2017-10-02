@@ -136,9 +136,21 @@ label.light {
 				<input type="email" id="mail" name="user-email" placeholder="Email">
 		</fieldset>
 		<fieldset>
-				<legend><span class="number">2</span> Your Concerns</legend>
-			<label for="concerns">Message:</label>
-			<textarea id="concerns" placeholder="Message"></textarea>
+			<legend><span class="number">2</span> Your Concerns</legend>
+				<label for="drop-down">Select:</label>
+					<select id="drop-down" name="options">
+						<option value="order-status">Order Status</option>
+						<option value="order-cancellation">Order Cancellation</option>
+						<option value="product-information">Product Information</option>
+						<option value="pattern-help">Pattern Help</option>
+						<option value="wholesale-inquiry">Wholesale Inquiry</option>
+						<option value="media-pr-inquiry">Media / PR Inquiry</option>
+						<option value="other">Other</option>
+					</select>
+
+
+				<label for="concerns">Message:</label>
+				<textarea id="concerns" placeholder="Message"></textarea>
 		</fieldset>
 		<button type="submit">Submit</button>
 	</form>
